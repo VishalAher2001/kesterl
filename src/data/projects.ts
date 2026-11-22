@@ -1,0 +1,208 @@
+import {ProjectItem} from '../types';
+
+export const PROJECTS: ProjectItem[] = [
+  {
+    id: 'vela-robotics',
+    slug: 'vela-robotics',
+    client: 'Vela Precision Systems',
+    title: 'Industrial identity and flagship hardware showcase for autonomous micro-assembly.',
+    categories: ['Branding', 'Digital', 'Web Design'],
+    primaryCategory: 'Digital',
+    year: '2026',
+    industry: 'Precision Robotics & Automation',
+    conceptNote: 'Portfolio Concept',
+    aspect: 'wide',
+    image: '/src/assets/images/project_vela_robotics_1795348876188.jpg',
+    alt: 'Matte anodized aluminum autonomous robotic arm mounted on a smooth grey limestone plinth under crisp directional studio lighting',
+    secondaryImage: '/src/assets/images/journal_ceramic_craft_1795348896936.jpg',
+    secondaryAlt: 'Precision matte black hardware enclosures and raw stoneware calibration blocks on a concrete workbench',
+    summary:
+      'Repositioned an engineering-led robotics manufacturer into a category-defining hardware brand through architectural art direction and an interactive technical flagship site.',
+    challenge:
+      'Vela possessed breakthrough sub-millimeter actuator hardware, yet their previous digital presence resembled a dense datasheet archive. Enterprise procurement directors struggled to grasp product differentiation within the first thirty seconds.',
+    approach:
+      'We stripped away industrial clichés in favor of calm architectural staging, interactive 60fps spec comparisons, and transparent payload calculators built directly into the editorial scroll narrative.',
+    deliverables: [
+      'Brand Architecture & Visual Identity',
+      'Flagship Web Experience & Interactive Spec Explorer',
+      'Art Direction & Hardware Photography Direction',
+      'Enterprise Lead Qualification Flow',
+    ],
+    metrics: [
+      {label: 'Enterprise Demo Requests', value: '+148%'},
+      {label: 'Avg. Spec Session Time', value: '4m 18s'},
+      {label: 'Lighthouse Performance', value: '99 / 100'},
+    ],
+    liveTagline: 'Sub-millimeter precision, presented with architectural clarity.',
+  },
+  {
+    id: 'solis-audio',
+    slug: 'solis-audio',
+    client: 'Solis Acoustic Labs',
+    title: 'Direct-to-listener commerce platform for sculptural reference loudspeakers.',
+    categories: ['E-commerce', 'Web Design', 'Branding'],
+    primaryCategory: 'E-commerce',
+    year: '2026',
+    industry: 'Consumer Hi-Fi & Industrial Audio',
+    conceptNote: 'Portfolio Concept',
+    aspect: 'portrait',
+    image: '/src/assets/images/project_solis_audio_1795348876167.jpg',
+    alt: 'Brushed aluminum and woven grey acoustic wool floorstanding reference speaker on a low travertine console in a sunlit minimalist room',
+    secondaryImage: '/src/assets/images/studio_architecture_1795348873269.jpg',
+    secondaryAlt: 'Minimalist concrete and oak listening studio interior illuminated by tall steel-framed daylight windows',
+    summary:
+      'A tactile luxury e-commerce flagship pairing spatial room-acoustics guidance with custom anodized finish configuration and private listening room bookings.',
+    challenge:
+      'Selling $6,800 reference speakers online requires overcoming buyers’ hesitation around room acoustics, finish accuracy, and installation logistics without overwhelming the page with audiophile jargon.',
+    approach:
+      'We designed a guided acoustic room-matching configurator paired with true-to-material daylight photography and a friction-free private audition scheduler across three flagship cities.',
+    deliverables: [
+      'Headless Commerce Architecture',
+      'Finish & Acoustic Room Configurator',
+      'Editorial Lookbook & Sonic Storytelling',
+      'Private Audition Booking System',
+    ],
+    metrics: [
+      {label: 'Direct Online Revenue Lift', value: '+64%'},
+      {label: 'Audition-to-Order Rate', value: '41%'},
+      {label: 'Checkout Abandonment Drop', value: '-29%'},
+    ],
+    liveTagline: 'Sculptural sound engineered for quiet architectural spaces.',
+  },
+  {
+    id: 'kora-botanics',
+    slug: 'kora-botanics',
+    client: 'Kora Botanics',
+    title: 'Refillable apothecary brand system and high-retention subscription storefront.',
+    categories: ['Branding', 'E-commerce', 'Campaigns'],
+    primaryCategory: 'Branding',
+    year: '2025',
+    industry: 'Clean Skincare & Botanical Formulation',
+    conceptNote: 'Portfolio Concept',
+    aspect: 'landscape',
+    image: '/src/assets/images/project_kora_botanics_1795348875225.jpg',
+    alt: 'Frosted amber glass and matte ceramic skincare bottles arranged on raw porous travertine stone with soft botanical leaf shadows',
+    secondaryImage: '/src/assets/images/studio_team_collab_1795348876110.jpg',
+    secondaryAlt: 'Two brand designers reviewing tactile paper swatches and apothecary identity boards on an oak worktable',
+    summary:
+      'A restrained packaging identity, editorial ingredient glossary, and flexible refill cadence engine crafted for an emerging Nordic-inspired botanical skincare house.',
+    challenge:
+      'Clean beauty brands routinely drown in pastel gradients and unsubstantiated wellness claims. Kora needed clinical credibility paired with warm, tactile luxury that encouraged glass-refill retention.',
+    approach:
+      'We anchored the visual system in raw mineral photography, transparent batch-traceability ledgers, and a 2-click refill cadence manager tailored for mobile shoppers.',
+    deliverables: [
+      'Packaging Typography & Tactile System',
+      'Custom Subscription & Refill Portal',
+      'Launch Campaign Art Direction',
+      'Ingredient Transparency Ledger',
+    ],
+    metrics: [
+      {label: '90-Day Refill Retention', value: '72%'},
+      {label: 'Mobile Conversion Rate', value: '4.6%'},
+      {label: 'Average Order Value', value: '+31%'},
+    ],
+    liveTagline: 'Clinical botanical formulations housed in enduring mineral vessels.',
+  },
+  {
+    id: 'meridian-mobility',
+    slug: 'meridian-mobility',
+    client: 'Meridian Urban Mobility',
+    title: 'Global launch campaign and reservation platform for compact electric transit.',
+    categories: ['Campaigns', 'Digital', 'Web Design'],
+    primaryCategory: 'Campaigns',
+    year: '2025',
+    industry: 'Electric Vehicles & Urban Mobility',
+    conceptNote: 'Portfolio Concept',
+    aspect: 'wide',
+    image: '/src/assets/images/project_meridian_mobility_1795348875803.jpg',
+    alt: 'Compact silver electric concept vehicle parked inside a sunlit concrete architectural gallery pavilion with geometric skylight',
+    secondaryImage: '/src/assets/images/journal_motion_studio_1795348898535.jpg',
+    secondaryAlt: 'Creative director evaluating geometric motion graphics on a reference monitor inside a concrete screening room',
+    summary:
+      'An integrated European launch campaign and zero-friction deposit reservation experience for an ultra-compact city electric vehicle.',
+    challenge:
+      'Urban commuters were skeptical of small-footprint EV range and cabin practicality. Meridian needed a launch film narrative and transparent range simulator before opening pre-orders.',
+    approach:
+      'We built a city-by-city commute range simulator alongside restrained twilight architectural photography and a two-step refundable reservation checkout.',
+    deliverables: [
+      'Integrated Launch Campaign Direction',
+      'Interactive City Range & Charging Simulator',
+      'Pre-Order Reservation Funnel',
+      'Digital Out-of-Home Motion System',
+    ],
+    metrics: [
+      {label: 'First-Quarter Reservations', value: '14,200'},
+      {label: 'Campaign Cost per Lead', value: '-38%'},
+      {label: 'Simulator Completion', value: '81%'},
+    ],
+    liveTagline: 'Compact electric mobility designed for dense European streets.',
+  },
+  {
+    id: 'norden-arch',
+    slug: 'norden-arch',
+    client: 'Norden Modular Pavilions',
+    title: 'Editorial portfolio and spatial configurator for prefabricated timber architecture.',
+    categories: ['Web Design', 'Digital'],
+    primaryCategory: 'Web Design',
+    year: '2025',
+    industry: 'Sustainable Architecture & Prefab Housing',
+    conceptNote: 'Portfolio Concept',
+    aspect: 'portrait',
+    image: '/src/assets/images/project_norden_arch_1795348875776.jpg',
+    alt: 'Nordic Douglas fir timber and floor-to-ceiling glass coastal pavilion glowing warmly at twilight beside misty water',
+    secondaryImage: '/src/assets/images/journal_brutalist_stairwell_1795348895626.jpg',
+    secondaryAlt: 'Curving poured concrete architectural staircase illuminated by soft afternoon skylight',
+    summary:
+      'A serene architectural monograph and interactive site-feasibility planner enabling landowners to configure timber studio pavilions with instant permit checklists.',
+    challenge:
+      'Prospective architectural clients often abandon prefab builders because pricing, site-prep timelines, and glazing options feel opaque until weeks into sales calls.',
+    approach:
+      'We crafted an editorial case-study archive paired with a clean modular footprint calculator that surfaces transparent turnkey estimates in real time.',
+    deliverables: [
+      'Editorial Web Design & Monograph System',
+      'Interactive Pavilion Footprint Calculator',
+      'Technical Specification & Permit Library',
+      'Architectural Photography Curation',
+    ],
+    metrics: [
+      {label: 'Qualified Landowner Inquiries', value: '+112%'},
+      {label: 'Sales Cycle Compression', value: '-3.5 wks'},
+      {label: 'Organic Search Impressions', value: '+210%'},
+    ],
+    liveTagline: 'Prefabricated Nordic timber architecture framed for coastal landscapes.',
+  },
+  {
+    id: 'aether-finance',
+    slug: 'aether-finance',
+    client: 'Aether Treasury Platform',
+    title: 'Design system and brand overhaul for institutional multi-currency treasury.',
+    categories: ['Digital', 'Branding', 'Campaigns'],
+    primaryCategory: 'Digital',
+    year: '2026',
+    industry: 'B2B FinTech & Corporate Treasury',
+    conceptNote: 'Portfolio Concept',
+    aspect: 'landscape',
+    image: '/src/assets/images/project_aether_fintech_1795348876460.jpg',
+    alt: 'Frosted optical glass prisms and brushed steel geometric blocks casting warm amber light caustics onto matte plaster',
+    secondaryImage: '/src/assets/images/journal_editorial_desk_1795348876393.jpg',
+    secondaryAlt: 'Design workstation featuring printed Swiss grid typography specimens, matte black laptop, and brass task lamp',
+    summary:
+      'Replacing generic dark-mode fintech tropes with a calm, high-trust typographic identity, optical glass visual language, and modular product design system.',
+    challenge:
+      'CFOs and treasury controllers associate neon-accented dark fintech sites with speculative startups rather than regulated multi-billion-dollar liquidity infrastructure.',
+    approach:
+      'We created an editorial daylight aesthetic anchored by precision optical-glass still life, tabular numeric clarity, and interactive FX settlement simulations.',
+    deliverables: [
+      'Brand Positioning & Visual Language',
+      'Multi-Product React Design System',
+      'Interactive Liquidity & FX Walkthrough',
+      'Series C Announcement Campaign',
+    ],
+    metrics: [
+      {label: 'Mid-Market CFO Demo Bookings', value: '+94%'},
+      {label: 'UI Component Adoption', value: '100%'},
+      {label: 'Brand Recall Score', value: '88%'},
+    ],
+    liveTagline: 'Institutional liquidity clarity without visual noise.',
+  },
+];

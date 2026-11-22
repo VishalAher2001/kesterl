@@ -1,0 +1,91 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --font-display: "Bricolage Grotesque", system-ui, -apple-system, sans-serif;
+    --font-sans: "Plus Jakarta Sans", system-ui, -apple-system, sans-serif;
+    --font-mono: "JetBrains Mono", ui-monospace, SFMono-Regular, monospace;
+    --surface-canvas: #F6F6F4;
+    --surface-elevated: #FFFFFF;
+    --surface-subtle: #ECECE9;
+    --ink-primary: #111111;
+    --ink-secondary: #575754;
+    --ink-muted: #767672;
+    --accent-orange: #FF521B;
+    --accent-orange-hover: #E54210;
+  }
+
+  html {
+    font-family: var(--font-sans);
+    background-color: var(--surface-canvas);
+    color: var(--ink-primary);
+    scroll-behavior: auto;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  body {
+    overflow-x: hidden;
+    background-color: var(--surface-canvas);
+    color: var(--ink-primary);
+  }
+
+  h1, h2, h3, .font-display {
+    font-family: var(--font-display);
+  }
+
+  .font-mono {
+    font-family: var(--font-mono);
+    font-variant-numeric: tabular-nums;
+  }
+
+  /* Accessible focus-visible indicator */
+  :focus-visible {
+    outline: 2px solid var(--accent-orange);
+    outline-offset: 3px;
+  }
+}
+
+/* Signature text-roll hover utility */
+.text-roll-trigger {
+  position: relative;
+  display: inline-flex;
+  overflow: hidden;
+  line-height: 1.2;
+}
+
+.text-roll-inner {
+  display: inline-flex;
+  flex-direction: column;
+  transition: transform 0.28s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.text-roll-trigger:hover .text-roll-inner,
+.group:hover .text-roll-inner {
+  transform: translateY(-50%);
+}
+
+.text-roll-clone {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+}
+
+/* Editorial clip-path reveal */
+.reveal-image-wrap {
+  overflow: hidden;
+}
+
+/* Reduced motion support */
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+  .text-roll-trigger:hover .text-roll-inner,
+  .group:hover .text-roll-inner {
+    transform: none !important;
+  }
+}
